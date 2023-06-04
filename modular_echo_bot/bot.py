@@ -10,7 +10,7 @@ async def main():
     # Загружаем конфиг в переменную config
     config: Config = load_config()
 
-    # Инициализируем бот и диспетчер
+    # Инициализируем бот и диспетчер dfgdgdhjd
     bot: Bot = Bot(token=config.tg_bot.token)
     dp: Dispatcher = Dispatcher()
 
@@ -18,7 +18,7 @@ async def main():
     dp.include_router(user_handlers.router)
     dp.include_router(other_handlers.router)
 
-    # Пропускаем накопившиеся апдейты и запускаем polling
+    # Пропускаем накопившиеся апдейты и запускаем polling hhfk
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
